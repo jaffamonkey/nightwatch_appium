@@ -22,7 +22,7 @@ module.exports = {
         default: {
             selenium_start_process: false,
             selenium_port: 4723,
-            selenium_host: "localhost",
+        //    selenium_host: "localhost",
             launch_url: "127.0.0.1",
             silent: true,
             screenshots: {
