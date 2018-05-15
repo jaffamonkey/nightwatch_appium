@@ -4,7 +4,7 @@
   "description": "test framework for nightwatch",
   "main": "index.js",
   "scripts": {
-    "e2e-test": "./node_modules/.bin/nightwatch -e ios",
+    "e2e-test": "./node_modules/.bin/nightwatch -e ios -X",
     "e2e-report": "node create-html-report.js"
   },
   "author": "stu",
