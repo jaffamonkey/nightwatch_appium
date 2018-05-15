@@ -12,10 +12,10 @@
   "devDependencies": {
     "cucumber": "^3.0.1",
     "cucumber-html-reporter": "^3.0.4",
-    "nightwatch": "^0.9.20",
-    "nightwatch-cucumber": "^8.0.10"
+    "nightwatch": "0.9.20",
+    "nightwatch-cucumber": "9.1.2",
   },
   "dependencies": {
-    "appium-xcuitest-driver": "^2.74.0"
+    "appium-xcuitest-driver": "latest"
   }
 }
