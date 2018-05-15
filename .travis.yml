@@ -24,13 +24,13 @@ before_script:
   - brew uninstall carthage
   - brew install carthage
   - brew link --overwrite carthage
+  - npm install -g appium
   - npm install -g appium-doctor
   - npm install wd
   
 script:
   - npm install
   - appium-doctor --ios
-  - ./node_modules/.bin/appium &
+  - appium &
   - sleep 20
-  - npm run -e ios
-  
+  - npm run e2e -e ios
