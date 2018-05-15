@@ -9,7 +9,6 @@ rvm: system
 before_script:
   - export DBUS_SESSION_BUS_ADDRESS=/dev/null
   - brew cask install xquartz
-#   - sleep 300
   - export DISPLAY=:5.0
   - brew uninstall carthage
   - brew install carthage
