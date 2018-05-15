@@ -42,6 +42,7 @@ module.exports = {
             // automationName: "XCUITest",
             desiredCapabilities: {
                 automationName: "XCUITest",
+                isHeadles: true,
                 browserName: "Safari",
                 platformName: "iOS",
                 platformVersion: "11.2",
