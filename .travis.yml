@@ -12,25 +12,25 @@ before_script:
 #   - sleep 300
   - export DISPLAY=:5.0
   - "Xvfb :5 -ac -screen 0 1024x768x8 &"
-  - sleep 3 # give xvfb some time to start
-#   - brew update
-#   - brew cask install java
-#   - export JAVA_HOME=$(/usr/libexec/java_home)
-#   - brew update
-#   - brew install libimobiledevice
-#   - brew install ideviceinstaller
-#   - brew install ios-webkit-debug-proxy
-#   - npm install -g ios-deploy
-  - brew uninstall carthage
-  - brew install carthage
-  - brew link --overwrite carthage
-  - npm install -g appium
-  - npm install -g appium-doctor
-  - npm install wd
+#   - sleep 3 # give xvfb some time to start
+# # #   - brew update
+# # #   - brew cask install java
+# # #   - export JAVA_HOME=$(/usr/libexec/java_home)
+# # #   - brew update
+# # #   - brew install libimobiledevice
+# # #   - brew install ideviceinstaller
+# # #   - brew install ios-webkit-debug-proxy
+# # #   - npm install -g ios-deploy
+# #   - brew uninstall carthage
+# #   - brew install carthage
+# #   - brew link --overwrite carthage
+# #   - npm install -g appium
+# #   - npm install -g appium-doctor
+# #   - npm install wd
   
-script:
-  - npm install
-  - appium-doctor --ios
-  - appium &
-  - sleep 20
-  - npm run e2e -e ios
+# # script:
+# #   - npm install
+# #   - appium-doctor --ios
+# #   - appium &
+# #   - sleep 20
+# #   - npm run e2e -e ios
