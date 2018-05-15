@@ -15,7 +15,7 @@ module.exports = {
     live_output: false,
     disable_colors: false,
     selenium: {
-        server_path: './bin/selenium-server-standalone-3.0.1.jar',
+        server_path: './bin/selenium-server-standalone-3.12.0.jar',
         log_path: ''
     },
     test_settings: {
