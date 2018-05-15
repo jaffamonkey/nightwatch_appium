@@ -15,12 +15,15 @@ module.exports = {
     live_output: false,
     disable_colors: false,
     selenium: {
+        start_process : true,
         server_path: './bin/selenium-server-standalone-3.12.0.jar',
         log_path: ''
     },
+    appium : {
+        start_process : true,
+    },
     test_settings: {
         default: {
-            selenium_start_process: false,
             selenium_port: 4723,
         //    selenium_host: "localhost",
             launch_url: "127.0.0.1",
