@@ -39,8 +39,9 @@ module.exports = {
         ios: {
             launch_url: "http://google.com",
             selenium_port: 4723,
-            automationName: "XCUITest",
+            // automationName: "XCUITest",
             desiredCapabilities: {
+                automationName: "XCUITest",
                 browserName: "Safari",
                 platformName: "iOS",
                 platformVersion: "11.2",
