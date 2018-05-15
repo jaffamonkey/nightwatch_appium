@@ -15,7 +15,7 @@ module.exports = {
     live_output: false,
     disable_colors: false,
     selenium: {
-        start_process : true,
+        start_process : false,
         server_path: './bin/selenium-server-standalone-3.12.0.jar',
         log_path: ''
     },
@@ -24,8 +24,8 @@ module.exports = {
     },
     test_settings: {
         default: {
-            selenium_port: 4723,
-            selenium_host: "127.0.0.1",
+            // selenium_port: 4723,
+            // selenium_host: "127.0.0.1",
             launch_url: "http://google.com",
             silent: true,
             screenshots: {
