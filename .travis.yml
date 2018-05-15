@@ -8,9 +8,9 @@ rvm: system
   
 before_script:
   - export DBUS_SESSION_BUS_ADDRESS=/dev/null
-  - brew cask install xquartz
+  - brew cask reinstall xquartz
   - export DISPLAY=:5.0
-  - sudo Xvfb :99 -ac -screen 0 1024x768x8
+  - sudo Xvfb :99 -ac -screen 0 1024x768x8 &
   - brew uninstall carthage
   - brew install carthage
   - brew link --overwrite carthage
