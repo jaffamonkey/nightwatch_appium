@@ -1,0 +1,36 @@
+sudo: required
+os: osx
+language: objective-c
+node_js: '9'
+osx_image: xcode9.3
+env: DEVICE=11.2       
+rvm: system
+  
+before_script:
+  - export DBUS_SESSION_BUS_ADDRESS=/dev/null
+  - brew cask install xquartz
+#   - sleep 300
+  - export DISPLAY=:5.0
+  - "Xvfb :5 -ac -screen 0 1024x768x8 &"
+  - sleep 3 # give xvfb some time to start
+#   - brew update
+#   - brew cask install java
+#   - export JAVA_HOME=$(/usr/libexec/java_home)
+#   - brew update
+#   - brew install libimobiledevice
+#   - brew install ideviceinstaller
+#   - brew install ios-webkit-debug-proxy
+#   - npm install -g ios-deploy
+  - brew uninstall carthage
+  - brew install carthage
+  - brew link --overwrite carthage
+  - npm install -g appium-doctor
+  - npm install wd
+  
+script:
+  - npm install
+  - appium-doctor --ios
+  - ./node_modules/.bin/appium &
+  - sleep 20
+  - npm run nightwatch-cucumber-travis-ios -- --tag iostest
+  
