@@ -20,5 +20,4 @@ script:
   - npm install
   - appium-doctor --ios
   - appium &
-  - sleep 20
   - npm run e2e-test
