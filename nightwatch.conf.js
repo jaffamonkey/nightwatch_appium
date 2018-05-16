@@ -51,7 +51,7 @@ module.exports = {
                 browserName: "Safari",
                 platformName: "iOS",
                 platformVersion: "11.2",
-                deviceName: "iPad Pro (9.7-inch)"
+                deviceName: "iPhone 7"
             }
         }
     }
