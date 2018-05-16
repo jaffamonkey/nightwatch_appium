@@ -42,6 +42,7 @@ module.exports = {
             // automationName: "XCUITest",
             desiredCapabilities: {
                 automationName: "XCUITest",
+                startIWDP: true,
                 isHeadles: true,
                 browserName: "Safari",
                 platformName: "iOS",
