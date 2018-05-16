@@ -49,7 +49,7 @@ module.exports = {
                 autoWebview: true,
                 browserName: "Safari",
                 platformName: "iOS",
-                platformVersion: "11.2",
+                platformVersion: "11.3",
                 deviceName: "iPhone 7",
                 clearSystemFiles: true,
                 wdaStartupRetryInterval: 10000,
