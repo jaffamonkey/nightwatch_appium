@@ -52,10 +52,8 @@ module.exports = {
                 platformVersion: "11.2",
                 deviceName: "iPhone 7",
                 clearSystemFiles: true,
-                wdaStartupRetryInterval: 1000,
-                useNewWDA: true,
-                waitForQuiescence: false,
-                shouldUseSingletonTestManager: false
+                wdaStartupRetryInterval: 10000,
+                useNewWDA: true
             }
         }
     }
