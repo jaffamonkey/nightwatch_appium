@@ -4,13 +4,13 @@
   "description": "test framework for nightwatch",
   "main": "index.js",
   "scripts": {
-    "e2e-test": "./node_modules/.bin/nightwatch -e ios",
+    "e2e-test": "./node_modules/.bin/nightwatch -e ios && ios-webkit-debug-proxy &",
     "e2e-report": "node create-html-report.js"
   },
   "author": "stu",
   "license": "ISC",
   "devDependencies": {
-    "cucumber": "^3.0.1",
+    "cucumber": "3.0.1",
     "cucumber-html-reporter": "^3.0.4",
     "nightwatch": "0.9.20",
     "nightwatch-cucumber": "9.1.2"
