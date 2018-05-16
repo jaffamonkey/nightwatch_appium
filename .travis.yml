@@ -1,17 +1,25 @@
 sudo: required
 os: osx
-language: objective-c
-node_js: '9'
+language: swift
 osx_image: xcode9.3
-env: DEVICE=11.2       
-rvm: system
-  
+xcode_sdk: iphonesimulator11.2
+
 before_script:
-  - brew cask reinstall xquartz
-  - brew uninstall carthage
-  - brew install carthage
-  - brew link --overwrite carthage
+  - pwd
+  - brew update && brew install libsodium
+  - git clone https://github.com/kinfoundation/travis-stellar-core-macos.git
+  - cd travis-stellar-core-macos && ./setup.sh && cd ..
+  - ./travis-stellar-core-macos/stellarcmd/stellarcmd -c ./travis-stellar-core-macos/stellarcmd/config.json info GCLBBAIDP34M4JACPQJUYNSPZCQK7IRHV7ETKV6U53JPYYUIIVDVJJFQ
+  - ./travis-stellar-core-macos/stellarcmd/stellarcmd -c ./travis-stellar-core-macos/stellarcmd/config.json create GBSJ7KFU2NXACVHVN2VWQIXIV5FWH6A7OIDDTEUYTCJYGY3FJMYIDTU7
+  - ./travis-stellar-core-macos/stellarcmd/stellarcmd -c ./travis-stellar-core-macos/stellarcmd/config.json info GBSJ7KFU2NXACVHVN2VWQIXIV5FWH6A7OIDDTEUYTCJYGY3FJMYIDTU7
+
+#Install appium
+  - brew upgrade openssl
+  - brew upgrade python
+  #Installs GNU grep
+  - brew install grep
   - npm install -g appium
+  - npm install -g wd
   - npm install -g appium-doctor
   
 script:
