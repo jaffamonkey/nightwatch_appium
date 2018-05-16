@@ -1,4 +1,5 @@
 
+
 require('nightwatch-cucumber')({
     cucumberArgs: [
         '--require', 'features/step_definitions',
@@ -18,13 +19,6 @@ module.exports = {
         start_process : false,
         server_path: './bin/selenium-server-standalone-3.12.0.jar',
         log_path: ''
-    },
-    selenium: {
-        start_process: false,
-        server_path: seleniumServer.path,
-        log_path: '',
-        host: '127.0.0.1',
-        port: 4444
     },
     appium: {
         start_process: false
