@@ -29,6 +29,6 @@ script:
   - cd /Users/travis/build/jaffamonkey/nightwatch_appium
   - npm install
   - appium-doctor --ios
-  - ios-webkit-debug-proxy &
   - appium &
+  - ios-webkit-debug-proxy -f http://www.bbc.co.uk &
   - npm run e2e-test
