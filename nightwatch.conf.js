@@ -24,9 +24,10 @@ module.exports = {
     },
     test_settings: {
         default: {
-            // selenium_port: 4444,
-            // selenium_host: "127.0.0.1",
-            launch_url: "http://google.com",
+            selenium_start_process: false,
+            selenium_port: 4723,
+            // selenium_host: "localhost",
+            launch_url: "127.0.0.1",
             silent: true,
             screenshots: {
                 enabled: false,
@@ -38,9 +39,10 @@ module.exports = {
         },
         ios: {
             launch_url: "http://google.com",
-            port: 4722,
-            selenium_port: 4722,
-            // automationName: "XCUITest",
+            selenium_start_process: false,
+            selenium_port : 4723,
+            // selenium_host : '127.0.0.1',
+            silent: true,
             desiredCapabilities: {
                 selenium_port: 4722,
                 automationName: "XCUITest",
