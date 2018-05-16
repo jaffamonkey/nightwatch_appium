@@ -27,7 +27,7 @@ before_script:
   
 script:
   # - cd /Users/travis/build/jaffamonkey/nightwatch_appium
-   - git config lfs.https://github.com/jaffamonkey/nightwatch_appium.git/info/lfs.access basic
+   - git config lfs.https://github.com/jaffamonkey/nightwatch_appium.git/info/lfs.access = basic
   - npm install
   - appium-doctor --ios
   - appium &
