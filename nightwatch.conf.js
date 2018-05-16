@@ -43,7 +43,6 @@ module.exports = {
             // selenium_host : '127.0.0.1',
             silent: true,
             desiredCapabilities: {
-                selenium_port: 4723,
                 automationName: "XCUITest",
                 isHeadless: false,
                 autoWebview: true,
