@@ -23,6 +23,7 @@ before_script:
   - npm install -g appium-doctor
   
 script:
+  - cd /Users/travis/build/jaffamonkey/nightwatch_appium
   - npm install
   - appium-doctor --ios
   - appium &
