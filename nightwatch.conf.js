@@ -38,10 +38,11 @@ module.exports = {
         },
         ios: {
             launch_url: "http://google.com",
-            port: 4724,
-            appium_port: 4724,
+            port: 4722,
+            selenium_port: 4722,
             // automationName: "XCUITest",
             desiredCapabilities: {
+                selenium_port: 4722,
                 automationName: "XCUITest",
                 startIWDP: true,
                 isHeadles: true,
