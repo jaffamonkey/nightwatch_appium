@@ -46,8 +46,8 @@ module.exports = {
             desiredCapabilities: {
                 selenium_port: 4722,
                 automationName: "XCUITest",
-                startIWDP: true,
-                isHeadles: true,
+                isHeadless: false,
+                autoWebview: true,
                 browserName: "Safari",
                 platformName: "iOS",
                 platformVersion: "11.2",
