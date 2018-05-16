@@ -53,8 +53,6 @@ module.exports = {
                 deviceName: "iPhone 7",
                 clearSystemFiles: true,
                 wdaStartupRetryInterval: 10000,
-                useNewWDA: true,
-                waitForQuiescence: false,
                 shouldUseSingletonTestManager: false
             }
         }
