@@ -18,12 +18,12 @@ before_script:
 #Install appium
   - brew upgrade openssl
   - brew upgrade python
-  - brew install ios-webkit-debug-proxy
   #Installs GNU grep
   - brew install grep
   - npm install -g appium
   - npm install -g wd
   - npm install -g appium-doctor
+  - npm install -g ios-webkit-debug-proxy
   
 script:
   - cd /Users/travis/build/jaffamonkey/nightwatch_appium
