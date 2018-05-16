@@ -38,7 +38,7 @@ module.exports = {
             }
         },
         ios: {
-            launch_url: "http://google.com",
+            launch_url: "http://www.bbc.co.uk",
             selenium_start_process: false,
             selenium_port : 4723,
             // selenium_host : '127.0.0.1',
