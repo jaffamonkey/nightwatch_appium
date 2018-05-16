@@ -18,5 +18,5 @@ before_script:
 script:
   - npm install
   - appium-doctor --ios
-  # - appium &
+  - appium &
   - npm run e2e-test
