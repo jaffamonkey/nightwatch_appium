@@ -7,7 +7,7 @@ defineSupportCode(({ Given, Then, When }) => {
     Given('I have opened the Sports page', function () {
         return bbc_sports
             .navigate()
-            .waitForElementVisible('@body', 1000)
+            .waitForElementVisible('@body', 10000)
             .expect.element('@more_button').to.be.present;
     });
 
