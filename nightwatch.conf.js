@@ -50,7 +50,12 @@ module.exports = {
                 browserName: "Safari",
                 platformName: "iOS",
                 platformVersion: "11.2",
-                deviceName: "iPhone 7"
+                deviceName: "iPhone 7",
+                clearSystemFiles: true,
+                wdaStartupRetryInterval: 1000,
+                useNewWDA: true,
+                waitForQuiescence: false,
+                shouldUseSingletonTestManager: false
             }
         }
     }
